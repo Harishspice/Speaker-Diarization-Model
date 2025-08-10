@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.git
+.gitignore
+outputs/
+venv/
+*.wav
+*.mp3
+*.flac
+*.pdf
+*.png
+*.jpg

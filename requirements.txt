@@ -1,0 +1,8 @@
+streamlit
+pyannote.audio
+openai-whisper
+langdetect
+matplotlib
+python-docx
+pandas
+huggingface-hub
