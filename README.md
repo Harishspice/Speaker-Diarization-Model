@@ -41,3 +41,31 @@
 ```bash
 git clone https://github.com/yourusername/speaker-diarization.git
 cd speaker-diarization
+```
+### 2️⃣ Build the Docker image
+```bash
+docker build -t speaker-diarization .
+```
+### 3️⃣ Run the container
+```bash
+docker run -it --rm -p 8501:8501 -e HUGGINGFACE_TOKEN="your_token_here" speaker-diarization
+```
+
+## 📂 Project Structure
+```bash
+.
+├── app.py               # Streamlit frontend
+├── final_pipeline.py    # Core diarization + transcription logic
+├── requirements.txt     # Python dependencies
+├── Dockerfile           # Container build instructions
+└── README.md            # Project documentation
+```
+
+---
+
+## 🔮 Conclusion
+This project bridges cutting-edge **speaker diarization** and **speech transcription** into a single, easy-to-use web application.  
+By combining **Pyannote.audio** for precise speaker segmentation, **Whisper** for accurate transcription, and **Streamlit** for an intuitive UI — all packaged with **Docker** — it ensures that advanced speech processing is accessible to developers, researchers, and real-world applications without complicated setup.
+
+Whether you’re building meeting transcription tools, analyzing interviews, or researching conversational patterns, this app delivers **high accuracy**, **scalability**, and **portability** right out of the box.
+
